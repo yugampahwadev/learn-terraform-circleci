@@ -1,5 +1,11 @@
 terraform {
-  cloud {}
+  cloud {
+    organization = "yugampahwa"
+
+    workspaces {
+      name = "learn_terraform_circlecli"
+    }
+  }
 
   required_providers {
     aws = {
